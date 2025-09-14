@@ -11,14 +11,14 @@ export default defineConfig([
     extends: ['js/recommended'],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
     rules: {
-      'no-unused-vars': ['warn'],
-    },
+      'no-unused-vars': ['warn']
+    }
   },
   eslintPluginPrettier,
   {
     files: ['**/*.css'],
     plugins: { css },
     language: 'css/css',
-    extends: ['css/recommended'],
-  },
+    extends: ['css/recommended']
+  }
 ]);

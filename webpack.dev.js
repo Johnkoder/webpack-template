@@ -8,15 +8,15 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.html$/i,
-        loader: 'html-loader',
+        loader: 'html-loader'
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   },
   devServer: {
-    static: './dist',
-  },
+    static: './dist'
+  }
 });
